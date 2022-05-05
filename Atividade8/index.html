@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários</title>
+</head>
+<body>
+    <h1><b>Aulas de Hipermídia</b></h1><br>
+    <h2><b>Preencha o formulário abaixo</b></h2>
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend> Dados Pessoais</legend><br>
+            <label for="nome">Nome:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="Nome"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Sobrenome"> Sobrenome: </label>
+            <input type="text" name="Sobrenome"><br><br>
+            <label for="Nascimento">Nascimento:&nbsp;&nbsp;</label>
+            <input type="text" name="Dia" size="1" placeholder="dd" maxlength="2">&nbsp;
+            <input type="text" name="Mês" size="1" placeholder="mm" maxlength="2">&nbsp;
+            <input type="text" name="Ano" size="1" placeholder="aaaa" maxlength="4"><br><br>
+            <label for="RG">RG:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="RG"><br><br>
+            <label for="CPF">CPF:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="CPF" size="9" maxlength="9"> - <input type="text" name="CPF2" size="1" maxlength="2">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend> Dados de Endereço</legend><br>
+            <label for="Rua">Rua:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="Rua"> &nbsp;&nbsp;&nbsp;&nbsp;
+            <label for="Numero"> Número:&nbsp;&nbsp;</label>
+            <input type="text" name="Numero" size="2"><br><br>
+            <label for="Bairro">Bairro:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="Bairro"> &nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+            <label for="Estado">Estado:&nbsp;&nbsp;&nbsp;&nbsp;
+                <select name="Estados">
+                    <option value="AC">Acre</option>
+                    <option value="AP">Amapá</option>
+                    <option value="AM">Amazonas</option>
+                    <option value="PA">Pará</option>
+                    <option value="RO">Rondônia</option>
+                    <option value="RR">Roraima</option>
+                    <option value="TO">Tocantins</option>
+                    <option value="AL">Alagoas</option>
+                    <option value="BA">Bahia</option>
+                    <option value="CE">Ceará</option>
+                    <option value="MA">Maranhão</option>
+                    <option value="PB">Paraíba</option>
+                    <option value="PE">Pernambuco</option>
+                    <option value="PI">Piauí</option>
+                    <option value="RN">Rio Grande do Norte</option>
+                    <option value="SE">Sergipe</option>
+                    <option value="DF">Distrito Federal</option>
+                    <option value="GO">Goiás</option>
+                    <option value="MT">Mato Grosso</option>
+                    <option value="MS">Mato Grosso do Sul</option>
+                    <option value="ES">Espírito Santo</option>
+                    <option value="MG">Minas Gerais</option>
+                    <option value="RJ">Rio de Janeiro</option>
+                    <option value="SP">São Paulo</option>
+                    <option value="PR">Paraná</option>
+                    <option value="RS">Rio Grande do Sul</option>
+                    <option value="SC">Santa Catarina</option>
+                </select>
+            </label><br><br>
+            <label for="Cidade">Cidade:&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="Cidade"><br><br>
+            <label for="CEP">CEP:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="CEP" size="9" maxlength="9"> - <input type="text" name="CEP2" size="1" maxlength="2">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Dados de Login</legend><br>
+            <label for="Email">Email:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="email"><br><br>
+            <label for="imagem">Imagem de Perfil:&nbsp;&nbsp;</label>
+            <button type="menu">Escolher arquivo...</button> Nenhum arquivo selecionado<br><br>
+            <label for="login">Login:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="login"><br><br>
+            <label for="Senha">Senha:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+            <input type="text" name="Senha"><br><br>
+            <label for="Csenha">Confirme a senha:&nbsp;&nbsp;</label>
+            <input type="text" name="Csenha">
+        </fieldset>
+        <br><br>
+        <fieldset>
+            <legend>Pesquisa de Interesse</legend><br>
+            <label for="Pesquisa1">Você deseja trabalhar como Webmaster?
+                <input type="radio" name="webmaster" value="sim"> Sim
+                <input type="radio" name="webmaster" value="nao"> Não
+                <input type="radio" name="webmaster" value="talvez"> Talvez
+                <input type="radio" name="webmaster" value="qmsabe"> Quem sabe
+            </label>
+            <br><br>
+            <label for="Pesquisa2">O que você deseja aprender?
+                <input type="checkbox" name="opcoes" value="html"/> HTML
+                <input type="checkbox" name="opcoes" value="css"/> CSS
+                <input type="checkbox" name="opcoes" value="javascript"/> JavaScript
+                <input type="checkbox" name="opcoes" value="php"/> PHP
+            </label>
+            <br><br>
+            <label for="Pesquisa3">Deixe seu comentário:
+                <input type="text" name="Opiniao" size="50">
+            </label>
+        </fieldset>
+    </form>
+    <br><br>
+    <button type="submit">Enviar</button>&nbsp;&nbsp;&nbsp;&nbsp;<button type="reset">Limpar</button>
+</body>
+</html>
