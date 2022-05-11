@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes e Elementos</title>
+</head>
+<style>
+    a:first-child::before {
+        content:"\0C1D";
+    }
+    a:link {
+        color: blue;
+    }
+    a:visited {
+        color: maroon;
+    }
+    a:hover {
+        color: yellow;
+    }
+    a:active {
+        color: darkgreen;
+    }
+</style>
+<body>
+    <header><h1 style="color: darkblue;">Pseudo Classes e Elementos</h1></header><hr><br>
+    <p>
+        <h2><a href="https://www.youtube.com/"> Youtube</a></h2>
+    </p>
+    <h2><a href="https://www.google.com.br/"> Google</a></h2>
+    <h2><a href="https://www.facebook.com/IFF.CamposCentro"> Página IFF Facebook</a></h2>
+    <h2><a href="https://academico.iff.edu.br/"> Acadêmico</a></h2>
+    <h2><a href="https://portal1.iff.edu.br/"> Portal IFF</a></h2>
+    <h2><a href="http://www.selecoes.iff.edu.br/"> Seleções IFF</a></h2>
+</body>
+</html>
