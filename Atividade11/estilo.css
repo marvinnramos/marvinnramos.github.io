@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+#menu-horizontal ul{
+    list-style: none;
+    padding: 0;
+    background-color: darkgray;
+    max-width: max-content;
+}
+
+#menu-horizontal ul li {
+    display: inline;
+}
+
+#menu-horizontal ul li a{
+    color:black;
+    text-decoration: none;
+    display: inline-block;
+    padding: 15px;
+}
+
+#menu-horizontal ul li a:hover{
+    background-image: url(./Sprite_g.jpg);
+}
+
+#menu-vertical ul{
+    list-style-type: none;
+    padding: 0;
+    max-width: max-content;
+}
+
+#menu-vertical ul li {
+    background-color: darkgray;
+}
+
+#menu-vertical ul li a{
+    color:black;
+    text-decoration: none;
+    display: block;
+    padding: 20px;
+}
+
+#menu-vertical ul li a:hover{
+    background-image: url(./Sprite_g.jpg);
+}
