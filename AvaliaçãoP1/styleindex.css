@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Satisfy&display=swap');
+
+* {
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(247, 212, 160);
+}
+img {
+    max-width: 50px;
+}
+
+.container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 4% 60% 25% 10%;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "header header header header"
+        "sidenav conteudo conteudo conteudo"
+        "sidenav conteudo conteudo conteudo"
+        "footer footer footer footer"
+    ;
+}
+
+.header {
+    grid-area: header;
+    text-align: center;
+    position: relative;
+    text-transform: uppercase;
+    font-family: fantasy;
+}
+
+.sidenav {
+    grid-area: sidenav;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.sidenav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.sidenav ul li a {
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+    margin: 0 auto 30px auto;
+    background: rgb(247, 212, 160);
+    box-shadow: 5px 5px 15px 0px rgba(44,44,44,0.15);
+}
+
+.sidenav ul li a:hover {
+    background-image: url(./Sprite_g.png);
+}
+
+.conteudo {
+    grid-area: conteudo;
+    margin-left: 100px;
+}
+
+.texto1 {
+    font-size: 30px;
+    border-style: solid;
+    max-width: 500px;
+    text-align: justify;
+    background-color: rgba(0, 255, 242, 0.616);
+    font-family: 'Satisfy', cursive;
+    margin-left: 150px;
+}
+
+.texto2 {
+    font-size: 20px;
+    margin-left: 700px;
+    font-size: 30px;
+    border-style: solid;
+    max-width: 400px;
+    text-align: justify;
+    background-color: rgba(10, 204, 139, 0.616);
+    font-family: 'Satisfy', cursive;
+}
+
+.footer {
+    grid-area: footer;
+    position: fixed;
+    bottom: 0;
+}
