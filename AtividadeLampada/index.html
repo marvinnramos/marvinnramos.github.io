@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lâmpada</title>
+    <style>
+        * {
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <img src="./lampada_off.gif" id="lampada" onclick="acenderLampada()"/>
+
+    <script>
+        var modo = "apagada";
+
+        function acenderLampada() {
+            if (modo == "apagada") {
+                document.getElementById('lampada').src='lampada_on.gif';
+                modo = "ligada";
+            } else {
+                document.getElementById('lampada').src='lampada_off.gif';
+                modo = "desligada";
+            }
+        }
+    </script>
+</body>
+</html>
