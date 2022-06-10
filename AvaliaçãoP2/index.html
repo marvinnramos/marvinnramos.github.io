@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+    <style>
+        * {
+            text-align: center;
+            margin-top: 10px;
+            background-color: beige;
+        }
+
+        #formularioBase {
+            border-style: dotted;
+        }
+
+        #header {
+            color: crimson;
+        }
+    </style>
+</head>
+<body>
+    <header id="header"><h1>Locação de Carros</h1></header>
+    <form id="formularioBase">
+        <p>Nome: <input type="text"></p>
+        <p>Telefone: <input type="text"></p>
+        <p><label for="CidadeRetirada">Cidade de Retirada: 
+            <select name="cidades" id="cidadeRetirada">
+                <option value="CG">Campos dos Goytacazes - RJ</option>
+                <option value="RJ">Rio de Janeiro - RJ</option>
+                <option value="VT">Vitória - ES</option>
+            </select>
+        </label></p>
+        <p><label for="CidadeRetirada">Cidade de Entrega: 
+            <select name="cidades" id="cidadeEntrega">
+                <option value="CG" id="campos">Campos dos Goytacazes - RJ</option>
+                <option value="RJ" id="rio">Rio de Janeiro - RJ</option>
+                <option value="VT" id="vitoria">Vitória - ES</option>
+            </select>
+        </label></p>
+        <p>Data de Retirada: <input type="date"></p>
+        <p>Data de Entrega: <input type="date"></p>
+        <p><label for="tipoCarro">Tipo de Carro:  
+            <select name="tipos">
+                <option value="BN" id="basico">Básico (R$ 119,00)</option>
+                <option value="BA" id="basicoAr">Básico com Ar (R$ 199,00)</option>
+                <option value="EX" id="executivo">Executivo(R$ 299,00)</option>
+            </select>
+        </label></p>
+        <p><button onclick="myFuncion();">Calcular</button></p>
+    </form>
+    <script>
+        var basico = document.getElementById("basico");
+        basico = 119.00;
+        var basicoAr = document.getElementById("basicoAr");
+        basicoAr = 199.00;
+        var executivo = document.getElementById("executivo");
+        executivo = 229.00;
+        var cidadeDiferente = 300.00;
+        function myFuncion() {
+            if (document.getElementById("cidadeRetirada") != document.getElementById("cidadeRetirada")) {
+                alert("Valor a pagar: R$" + basico);
+            } else {
+                alert("Valor a pagar: R$" + (basico+cidadeDiferente));
+            }
+
+        }
+    </script>
+</body>
+</html>
